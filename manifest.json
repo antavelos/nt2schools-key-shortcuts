@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Groene Boek Key Shortcuts",
+	"description": "Introduce key shortcuts in the digital version of Groene Boek of NT2School.nl",
+	"version": "1.0",
+	"icons": {
+	},
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "images/icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.nt2methodes.nl/*"],
+            "js": ["content/content.js"],
+            "run_at": "document_end"
+        }
+    ],
+	"permissions": [
+        "activeTab",
+        "storage"
+    ]
+}

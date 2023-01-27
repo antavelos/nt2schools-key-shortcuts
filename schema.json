@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "toggleChecked": {
+            "title": "",
+            "description": "",
+            "type": "boolean"
+        }
+    }
+}
